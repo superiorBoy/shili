@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>时间选择</title>
+		<meta name="keyword" content="" />
+		<meta name="description" content="" />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/city-picker.css" />
+		<style type="text/css">
+			.tab_chaxun input {
+				margin-right: 0;
+			}
+
+			#riqi {
+				width: 310px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+
+
+
+
+
+		<input type="text" class="demo-input" width="310px" placeholder="开始时间  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ~  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  结束时间"
+		 id="riqi" name='riqi'></p>
+		<button type="button" onclick="dd_chaxun()">查询</button>
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function dd_chaxun() {
+
+				var riqi = $("input[name='riqi']").val()
+
+				console.log(riqi)
+
+			}
+		</script>
+		<script type="text/javascript">
+			//日期范围
+			laydate.render({
+				elem: '#riqi',
+				range: true
+			});
+		</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>：jQuery省市区三级联动插件</title>
+<link href="css/city-picker.css" rel="stylesheet">
+</head>
+<body>
+
+
+	
+		<!-- <div id="distpicker"> -->
+			<!-- <div class="form-group"> -->
+				<div style="position: relative;">
+					<input id="city-picker3" class="form-control" readonly type="text" value="江苏省/常州市/溧阳市" data-toggle="city-picker">
+				</div>
+			<!-- </div> -->
+		<!-- 	<div class="form-group">
+				<button class="btn btn-warning" id="reset" type="button">Reset</button>
+				<button class="btn btn-danger" id="destroy" type="button">Destroy</button>
+			</div> -->
+		<!-- </div> -->
+	
+
+<button type="button" onclick="queding()" style="margin-top: 100px;">确定</button>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/city-picker.data.js"></script>
+<script src="js/city-picker.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript">
+	function queding(){
+		
+		var sheng = $('.select-item').eq(0).text()
+		var shi = $('.select-item').eq(1).text()
+		var qu = $('.select-item').eq(2).text()
+		console.log(sheng,shi,qu)
+	}
+</script>
+
+
+</body>
+</html>
+
+
+<!-- <link href="css/city-picker.css" rel="stylesheet">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/city-picker.data.js"></script>
+<script src="js/city-picker.js"></script>
+<script src="js/main.js"></script> -->
